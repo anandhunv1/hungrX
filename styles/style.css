@@ -1118,7 +1118,19 @@ gap:2px;
   border-bottom:1px solid;
 }
 }
+@media (min-width: 1400px) {
 
+  .quote{
+    width:80%
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .quote{
+    width:100%
+  }
+}
 
 
 
@@ -1778,4 +1790,5 @@ gap:2px;
   
 }
 }
+
 
