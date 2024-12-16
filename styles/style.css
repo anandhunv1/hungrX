@@ -11,6 +11,7 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
+  background:#1a1a1a;
 }
 
 html {
@@ -354,6 +355,14 @@ section {
   margin-left:-100px;
 }
 
+.message-from-founder-all {
+  width: 220%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 100%;
+  margin-left: -100px;
+}
 .message-from-founder-title{
   display:flex;
   flex-direction:column;
@@ -379,53 +388,34 @@ section {
   font-weight: bold;
   color: #fff;
 }
-.quote-with-image{
-  display:flex;
-  flex-direction:column;
-  gap:40px;
-  text-align:left;
-  width:200px;
+.quote-with-image {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Smaller gap for better scaling */
+  text-align: left;
+  max-width: 90%; /* Allow it to scale with the screen */
+  margin: 0 auto; /* Center align the content */
 }
 
-.quote-with-image .image{
-  width:51px
-  
-}
-/* .quote {
-  font-size: 16px;
-  line-height: normal;
-  color: #ffffff;
-  margin-bottom: 20px;
-  font-family:"Fira Code", Helvetica;
-  letter-spacing:0;
-  font-weight:500;
-
-} */
-.quote {
-  font-size: 16px; /* Default font size for larger screens */
-  line-height: 1.6; /* Improved line spacing for better readability */
-  margin: 16px 20px; /* Add spacing around the text */
-  text-align: justify; /* Justify text for a clean look */
-  color: #ffffff;
-  font-family:"Fira Code", Helvetica;
-  letter-spacing:0;
-  font-weight:500;
-  width:500px;
+.quote-with-image .image {
+  width: 50px; /* Keep it small but responsive */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .quote {
-  font-size: 16px;
-  line-height: 1.5; /* Improved readability with consistent line spacing */
+  font-size: 16px; /* Default size */
+  line-height: 1.6;
+  margin: 0; /* Remove conflicting margins */
+  text-align: justify;
   color: #ffffff;
-  margin-bottom: 20px;
-  margin: 16px 20px; /* Add spacing around the text */
   font-family: "Fira Code", Helvetica;
-  letter-spacing: 0.2px; /* Slight adjustment for better letter spacing */
+  letter-spacing: 0.2px;
   font-weight: 500;
-  text-align: justify; /* Align text cleanly with justified alignment */
-  hyphens: auto; /* Enable natural word-breaking */
-  word-spacing: -3.5px; 
+  word-spacing: normal; /* Reset word-spacing */
+  hyphens: auto;
+  max-width: 100%; /* Ensure it fits within the parent container */
 }
+
 .founder-name {
   font-size: 20px;
   font-weight: 700;
@@ -462,6 +452,7 @@ section {
 
  }
 
+
  .founder-details{
   display:flex;
   flex-direction:column;
@@ -475,6 +466,27 @@ section {
   height:676px;
 
 }
+
+.founder-image {
+  margin-top: 180px;
+  border-bottom: 1px solid;
+  display: flex;
+  align-items: end;
+  gap: 2rem; /* Use relative units like rem or % for responsiveness */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.founder-image-div {
+  max-width: 100%; /* Ensures the image container doesn't overflow */
+  flex: 1; /* Allows the container to grow/shrink with screen size */
+}
+
+.element-image {
+  width: 100%; /* Make image responsive to its container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures the image scales nicely */
+}
+
 .button-for-toggle{
   width:100%;
   display:flex;
@@ -926,6 +938,8 @@ section {
 
 .quote {
   font-size: 13px;
+  padding-left: 130px;
+  padding-right: 130px;
 }
 
 .founder-name {
@@ -1173,10 +1187,11 @@ gap:2px;
     text-align: center;
   }
 
-  .quote-with-image {
-    align-items: center;
-    text-align: center;
-  }
+    .quote-with-image {
+        align-items: center;
+        text-align: center;
+        width: max-content;
+    }
 
   .quote-with-image .image {
     width: 40px;
@@ -1184,6 +1199,11 @@ gap:2px;
 
   .quote {
     font-size: 14px;
+    width:30%;
+
+  }
+  .features-container{
+    padding-left:0px;
   }
 
   .founder-image {
@@ -1234,7 +1254,9 @@ gap:2px;
 
 .quote {
   font-size: 14px;
-  width:400px;
+  width:320px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .founder-name {
@@ -1423,7 +1445,7 @@ gap:2px;
   }
   .logo .logo-2 {
     height: 15px;
-    margin-left: -4px;
+    margin-left: -5px;
     margin-top: 19px;
 }
 
