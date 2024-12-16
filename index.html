@@ -191,11 +191,13 @@
 
     </div>
 
-    <div class="button-for-toggle">
-      <div class="toggle-button" id="toggleButton" onclick="changeImage()">
-        <div class="circle"></div>
-      </div>
+    <div class="toggle-container">
+      <input type="checkbox" id="toggleSwitch" class="toggle-checkbox" onclick="changeImage()" />
+      <label for="toggleSwitch" class="toggle-label">
+        <span class="toggle-circle"></span>
+      </label>
     </div>
+    
 
 
   </section>
@@ -290,7 +292,7 @@
     <div class="links">
       <a href="#" class="link">HOME</a>
       <a href="#about-us-section" class="link">ABOUT US</a>
-      <a href="features-section" class="link">FEATURES</a>
+      <a href="#features-section" class="link">FEATURES</a>
     </div>
     <div class="policies">
       <a href="privacy-policy.html" target="_blank" class="policy-link">Privacy Policy</a>

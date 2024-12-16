@@ -94,3 +94,20 @@ document.querySelector('.home-nav').addEventListener('click', function(e) {
 
 
 
+
+
+
+
+function changeImage() {
+  const toggleSwitch = document.getElementById('toggleSwitch');
+  const image = document.getElementById('toggleImage');
+
+  if (toggleSwitch.checked) {
+    image.src = './media/2nd image.png'; // Change to second image
+  } else {
+    image.src = './media/1st image.png'; // Change to first image
+  }
+}
+
+
+
