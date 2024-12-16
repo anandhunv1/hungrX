@@ -472,8 +472,8 @@ section {
   border-bottom: 1px solid;
   display: flex;
   align-items: end;
-  gap: 2rem; /* Use relative units like rem or % for responsiveness */
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  gap: 2rem; 
+  flex-wrap: nowrap; /* Allow items to wrap on smaller screens */
 }
 
 .founder-image-div {
@@ -483,10 +483,9 @@ section {
 }
 
 .element-image {
-  width: 489px; /* Make image responsive to its container */
-  /* height: auto; Maintain aspect ratio */
-  height:676px;
-  object-fit: cover; /* Ensures the image scales nicely */
+      width: 500px;
+    height: 650px;
+  object-fit: fill; /* Ensures the image scales nicely */
 }
 
 .button-for-toggle{
@@ -859,6 +858,7 @@ section {
 
 
 
+
 /* ---------768px------------------------------------------------------------------------------------------------------------------------------- */
 
 /* Responsive Design */
@@ -1200,6 +1200,14 @@ gap:2px;
   .message-from-founder-title {
     text-align: center;
   }
+
+  .founder-image {
+    margin-top: 180px;
+    border-bottom: 1px solid;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
 
     .quote-with-image {
         align-items: center;
