@@ -479,11 +479,13 @@ section {
 .founder-image-div {
   max-width: 100%; /* Ensures the image container doesn't overflow */
   flex: 1; /* Allows the container to grow/shrink with screen size */
+
 }
 
 .element-image {
-  width: 100%; /* Make image responsive to its container */
-  height: auto; /* Maintain aspect ratio */
+  width: 489px; /* Make image responsive to its container */
+  /* height: auto; Maintain aspect ratio */
+  height:676px;
   object-fit: cover; /* Ensures the image scales nicely */
 }
 
